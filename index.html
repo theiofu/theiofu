@@ -1,0 +1,49 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>
+   Institute of Uncertainty
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');    body, h1, h2, h3, p {      font-family: 'Roboto Slab', serif;    }        .hover-underline-animation {      display: inline-block;      position: relative;      color: black;    }    .hover-underline-animation::after {      content: '';      position: absolute;      width: 100%;      transform: scaleX(0);      height: 2px;      bottom: 0;      left: 0;      background-color: black;      transform-origin: bottom right;      transition: transform 0.25s ease-out;    }    .hover-underline-animation:hover::after {      transform: scaleX(1);      transform-origin: bottom left;    }
+  </style>
+ </head>
+ <body class="bg-white text-black">
+  <div class="container mx-auto px-4 py-12">
+   <div class="flex flex-col items-center">
+    <h1 class="text-5xl font-extrabold mb-8">
+     Institute of Uncertainty
+    </h1>
+    <p class="text-lg mb-6 italic">
+     Question Everything...
+    </p>
+    <div class="space-x-4 mb-12">
+     <a class="hover-underline-animation" href="#">
+      ABOUT US
+     </a>
+     <a class="hover-underline-animation" href="#">
+      BOOKS
+     </a>
+     <a class="hover-underline-animation" href="#">
+      AUTHORS
+     </a>
+     <a class="hover-underline-animation" href="#">
+      CONTACT US
+     </a>
+    </div>
+    <div class="max-w-md text-center">
+     <h2 class="text-3xl font-semibold mb-4">
+      ABOUT US
+     </h2>
+     <p class="mb-4">
+      The Institute of Uncertainty is dedicated to unveiling the mysteries that lie beyond the veil of the ordinary. As a publishing company specializing in occult literature, our mission is to curate and disseminate knowledge that transcends the boundaries of conventional understanding.
+     </p>
+     <p>
+      Through the written word, we aim to illuminate the arcane, explore the esoteric, and guide seekers on a journey of discovery into the realms of the unknown. Embracing the enigmatic, we strive to be a beacon for those who seek to unravel the secrets that dwell in the shadows, fostering a community of open-minded individuals committed to expanding their understanding of the mystical and the mysterious.
+     </p>
+    </div>
+   </div>
+  </div>
+ 
+</body></html>

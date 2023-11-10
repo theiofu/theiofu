@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Aliens";
+  src: url("fonts/alien/aliens-and-cows-font/AliensAndCows-Orz6.ttf")
+    format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
+body,
+h1 {
+  font-family: Aliens;
+}
+h2,
+h3,
+p {
+  font-family: "Roboto Slab", serif;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
